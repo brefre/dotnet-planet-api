@@ -1,0 +1,16 @@
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+
+namespace TodoApi.Controllers
+{
+    [Route("api/planets")]
+    [ApiController]
+    public class PlanetController : ControllerBase
+    {
+        [HttpGet]
+        public ActionResult getIndex()
+        {
+             return Content("Hi and welcome to the universe.\n\t GET /planets/{id} to learn about planets.\n\n");
+        }
+    }
+}
